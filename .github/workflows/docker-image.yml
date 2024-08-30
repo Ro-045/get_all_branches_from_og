@@ -11,7 +11,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    environment: topkuber
+    environment: pratap045
+
+
 
     steps:
       - name: Checkout code
@@ -32,7 +34,7 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: topkuber/backendtitan6:latest
+          tags: pratap045/demo:demo1
           load: true
 
       - name: Logout from DockerHub
